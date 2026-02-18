@@ -5,5 +5,5 @@ await Bun.build({
 	outdir:'./dst'
 });
 await Bun.write('./dst/_redirects',`/ /index.js 301`);
-await Bun.write('./dst/_headers',`/static/*
+await Bun.write('./dst/_headers',`/*
 	Access-Control-Allow-Origin:*`);
