@@ -3,8 +3,8 @@
 	"name":"cm-6ca-me",
 	"compatibility_date":"2026-02-18",
 	"build":{
-		"command":"bun build --minify --outdir=dst ./index.mjs",
-		"watch_dir":["index.mjs"]
+		"command":"bun build.mjs",
+		"watch_dir":["src","build.mjs"]
 	},
 	"routes":[
 		{"pattern":"cm.6ca.me","custom_domain":true}
