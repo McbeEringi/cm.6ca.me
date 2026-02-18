@@ -1,0 +1,15 @@
+import{basicSetup}from'codemirror';
+import{EditorView,keymap,showPanel,highlightWhitespace}from'@codemirror/view';
+import{EditorState}from'@codemirror/state';
+import{indentUnit}from'@codemirror/language';
+import{indentWithTab}from'@codemirror/commands';
+import{openSearchPanel}from'@codemirror/search';
+import{oneDark}from'@codemirror/theme-one-dark';
+const
+setup=[
+	basicSetup,
+	highlightWhitespace(),
+	keymap.of([indentWithTab]),EditorState.tabSize.of(2),indentUnit.of('\t'),
+	oneDark
+];
+export{EditorView,keymap,showPanel,setup,openSearchPanel};
